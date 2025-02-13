@@ -1,0 +1,96 @@
+><!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mi primera Web</title>
+        <link href="css\boostrap.css" rel ="stylesheet"/>
+        <link href="css\estilos2.css" rel ="stylesheet"/>
+        <script> src="js/bootstrap.js"</script>   
+    </head>
+    <body>
+        <div class="Cabecera">
+            <div class="logo1">
+                 <img src="img\restd.jpg" alt="Logo restaurante">
+                </div>
+                <div class="nombre">
+                    <h1>Restaurante Lorem</h1>
+                </div>
+                <div class="logo2">
+                    <img src="img\restd.jpg" alt="Logo restaurante">
+                </div>
+            </div>
+
+            <div class="navegadores">
+                <div class="button">
+                    <button type="button" class="btn btn-info"><a href="index.html">Inicio</a></button>
+                    <button type="button" class="btn btn-info"><a href="pagina2.html">Nuestra Cocina</a></button>
+                    <button type="button" class="btn btn-info"><a href="pagina3.html">Haz tu Reserva</a></button>
+                    <button type="button" class="btn btn-info"><a href="pagina3.html">Contacto</a></button>
+                </div>
+            </div>
+        </div>
+        <h1>Recetas de Cocina</h1>
+
+        <!-- Tabla de recetas -->
+        <table class="tabla-recetas">
+            <tr>
+                <th>Ensaladas</th>
+                <th>Carnes</th>
+                <th>Pescados</th>
+                <th>Vegetales</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#ensalada">
+                        <img src="ensalada.jpg" alt="Ensalada">
+                    </a>
+                </td>
+                <td>
+                    <a href="#carne">
+                        <img src="carne.jpg" alt="Carne">
+                    </a>
+                </td>
+                <td>
+                    <a href="#pescado">
+                        <img src="pescado.jpg" alt="Pescado">
+                    </a>
+                </td>
+                <td>
+                    <a href="#vegetales">
+                        <img src="vegetales.jpg" alt="Vegetales">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    
+        <!-- Recetas a pantalla completa -->
+        <div id="ensalada" class="receta-completa">
+            <h2>Receta de Ensalada</h2>
+            <p>Ingredientes: Lechuga, tomate, cebolla, aceitunas, aceite de oliva, sal y vinagre.</p>
+            <p>Preparación: Mezcla todos los ingredientes en un bol y sirve fresco.</p>
+            
+        </div>
+    
+        <div id="carne" class="receta-completa">
+            <h2>Receta de Carne</h2>
+            <p>Ingredientes: Filete de ternera, sal, pimienta, aceite de oliva.</p>
+            <p>Preparación: Sella la carne en una sartén caliente y cocina al gusto.</p>
+           
+        </div>
+    
+        <div id="pescado" class="receta-completa">
+            <h2>Receta de Pescado</h2>
+            <p>Ingredientes: Filete de salmón, limón, eneldo, sal y pimienta.</p>
+            <p>Preparación: Hornea el salmón con limón y eneldo a 180°C durante 20 minutos.</p>
+       
+        </div>
+    
+        <div id="vegetales" class="receta-completa">
+            <h2>Receta de Vegetales</h2>
+            <p>Ingredientes: Brócoli, zanahoria, pimiento, aceite de oliva, sal.</p>
+            <p>Preparación: Saltea los vegetales en una sartén con aceite de oliva.</p>
+        </div>
+    
+    </body>
+    </html>

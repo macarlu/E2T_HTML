@@ -1,0 +1,213 @@
+/*Inicio cabecera*/
+
+.cabecera{
+    display: flex;
+    background-color: navy;
+    width: auto;
+    height: 15%;
+    padding: 10 40px;
+    margin-left: 0%;
+    justify-content: center;
+    align-items: center;
+  
+  .nombre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white; 
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    text-align:center;
+    font-size: 28px;
+    }
+  .logo1{
+  
+    object-fit: cover;
+    height: 110%;
+    display: inline-flex;
+    position: relative;
+    top: 1%;
+    width: 100%;
+  
+  }
+  .logo2{
+    
+      object-fit: cover;
+      height: 110%;
+      display: inline-flex;
+      justify-content: space-around;
+      position: relative;
+    
+    }
+  }
+  
+  .body{
+  
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  
+    background-color: bisque;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: auto;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  /*Inicio barra navegadores*/
+  
+  .navegadores{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+  }
+    .button { 
+      
+      display: inline-block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+      font-size: 22px
+       }
+  
+  
+           /* Estilos generales */
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Estilos de la tabla */
+        .tabla-recetas {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabla-recetas th, .tabla-recetas td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .tabla-recetas th {
+            background-color: #f8f8f8;
+            font-size: 18px;
+        }
+
+        .tabla-recetas img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+      /* Estilos de la receta a pantalla completa */
+        .receta-completa {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+            z-index: 1000;
+        }
+
+        .receta-completa h2 {
+            font-size: 30px;
+        }
+
+        .receta-completa p {
+            font-size: 20px;
+            margin: 20px auto;
+            width: 60%;
+        }
+
+          
+    <h1>Recetas de Cocina</h1>
+
+    <!-- Tabla de recetas -->
+    <table class="tabla-recetas">
+        <tr>
+            <th>Ensaladas</th>
+            <th>Carnes</th>
+            <th>Pescados</th>
+            <th>Vegetales</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="i./img/ensalada-arcoiris-de-lentejas.jpg" alt="Ensalada">
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="img\patatas-conejo-asados.jpg" alt="Carne">
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="img\salmon-esparragos-silvestres.jpg" alt="Pescado">
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="img\rulos-calabacin-brandada.jpg" alt="Vegetales">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Recetas a pantalla completa -->
+    <div id="ensalada" class="receta-completa">
+        <h2>Receta de Ensalada</h2>
+        <p>Ingredientes: Lechuga, tomate, cebolla, aceitunas, aceite de oliva, sal y vinagre.</p>
+        <p>Preparación: Mezcla todos los ingredientes en un bol y sirve fresco.</p>
+        
+    </div>
+
+    <div id="carne" class="receta-completa">
+        <h2>Receta de Carne</h2>
+        <p>Ingredientes: Filete de ternera, sal, pimienta, aceite de oliva.</p>
+        <p>Preparación: Sella la carne en una sartén caliente y cocina al gusto.</p>
+        
+    </div>
+
+    <div id="pescado" class="receta-completa">
+        <h2>Receta de Pescado</h2>
+        <p>Ingredientes: Filete de salmón, limón, eneldo, sal y pimienta.</p>
+        <p>Preparación: Hornea el salmón con limón y eneldo a 180°C durante 20 minutos.</p>
+        
+    </div>
+
+    <div id="vegetales" class="receta-completa">
+        <h2>Receta de Vegetales</h2>
+        <p>Ingredientes: Brócoli, zanahoria, pimiento, aceite de oliva, sal.</p>
+        <p>Preparación: Saltea los vegetales en una sartén con aceite de oliva.</p>
+        
+    </div>
+
+   

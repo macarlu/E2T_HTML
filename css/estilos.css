@@ -1,0 +1,142 @@
+
+/*Inicio cabecera*/
+
+.cabecera{
+  display: flex;
+  background-color: navy;
+  width: auto;
+  height: 15%;
+  padding: 10 40px;
+  margin-left: 0%;
+  justify-content: center;
+  align-items: center;
+
+.nombre{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: white; 
+  position: absolute;
+  top: 1%;
+  width: 100%;
+  text-align:center;
+  font-size: 28px;
+  }
+.logo1{
+
+  object-fit: cover;
+  height: 110%;
+  display: inline-flex;
+  position: relative;
+  top: 1%;
+  width: 100%;
+
+}
+.logo2{
+  
+    object-fit: cover;
+    height: 110%;
+    display: inline-flex;
+    justify-content: space-around;
+    position: relative;
+  
+  }
+}
+
+.body{
+
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  background-color: bisque;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/*Inicio barra navegadores*/
+
+.navegadores{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+}
+  .button { 
+    
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 22px
+     }
+
+
+/*Inicio del body*/
+
+.contenedor1{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 50%;
+  padding: 10px;
+}
+  
+
+.texto1{
+  flex: 1;
+  min-width: 816px;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+.imagen1{
+  flex: 1;
+  max-width: 300px;
+  align-items: center;
+}
+
+.imagen img{
+  width: 100%;
+  height: auto;
+}
+
+.contenedor2{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 50%;
+  padding: 10px;
+}
+  
+.texto2{
+  flex: 1;
+  min-width: 816px;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+.imagen2{
+  flex: 1;
+  max-width: 500px;
+  align-items: center;
+}
+
+.imagen img{
+  width: 100%;
+  height: auto;
+}
