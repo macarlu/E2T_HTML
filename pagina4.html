@@ -1,41 +1,76 @@
-><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mi primera Web</title>
-        <link href="css\bootstrap.css" rel ="stylesheet"/>
-        <link href="css\estilos.css" rel ="stylesheet"/>
-        <script> src="js/bootstrap.js"</script>   
+        <link href="css/bootstrap.css" rel ="stylesheet"/>
+        <link href="css/estilos.css" rel ="stylesheet"/>
+        <script src="js/bootstrap.js"></script>   
     </head>
-    <body>
-        <div id="cabecera">
-           
+
+<body>
+    <header>
+        <div class="cabecera">
             <div class="nombre">
                 <h1>Restaurante Lorem</h1>
             </div>
 
-            <div class="navegadores">
-                <div class="button">
-                <button type="button" class="btn btn-info"><a href="index.html">Inicio</a></button>
-                </div>
-                <div class="button">
-                <button type="button" class="btn btn-info"><a href="pagina2.html">Nuestra Cocina</a></button>
-                </div>
-                <div class="button">
-                <button type="button" class="btn btn-info"><a href="pagina3.html">Haz tu Reserva</a></button>
-                </div>
-                <div class="button">
-                <button type="button" class="btn btn-info"><a href="pagina3.html">Contacto</a></button>
-                </div>
+            <div class="logo1">
+                <img src="img/restd.jpg" alt="logo restaurante">
+            </div>
+
+            <div class="logo2">
+                <img src="img/restd.jpg" alt="logo restaurante">
             </div>
         </div>
-            <div>
-                <h2>Donde encontrarnos</h2>
-            </div>
-                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23156.320327300207!2d-8.239980175636203!3d43.4910685010332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7618d703d177%3A0x90284b0722a8b65b!2sFerrol%2C%20La%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1738845491324!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-            <footer>
-                <p>Derechos reservados &copy; 2025</p>
-            </footer>
-        </body>
-    </html>
+    </header>
+
+    <nav>
+        <div class="navegador">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="pagina2.html">Menú</a>
+                </li>
+                <li>
+                    <a href="pagina3.html">Reservas</a>
+                </li>
+                <li>
+                    <a href="pagina4.html">Contacto</a>
+                </li>
+                </ul>
+        </div>
+    </nav>
+    <main>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2894.808639253876!2d-8.22984066540012!3d43.48546377512462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1743335708386!5m2!1ses!2ses" margin-top="10px" width="100%" height="250" style="border-radius: 2%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="reservas-info">
+            <h3>Horario</h3>
+            <ul class="horario">
+                <li><strong>Lunes a Jueves:</strong> 13:00 - 23:00</li>
+                <li><strong>Viernes y Sábado:</strong> 13:00 - 00:00</li>
+                <li><strong>Domingo:</strong> 13:00 - 22:00</li>
+            </ul>
+            
+            <h3>Contacto</h3>
+            <p><i class="icono">📞</i> +34 123 456 789</p>
+            <p><i class="icono">✉️</i> reservas@restaurantelorem.com</p>
+            
+            <h3>Políticas</h3>
+            <ul class="politicas">
+                <li>Reservas con un mínimo de 24h de antelación</li>
+                <li>Máximo 25 minutos de tolerancia a retrasos</li>
+                <li>Grupos mayores de 15 personas, consultar </li>
+            </ul>
+        </div>
+    
+    <footer class="pie">
+        <div class="footer-content">
+            <div class="copyright">Derechos reservados &copy; 2025</div>
+            <div class="author">By Jon_Macarlu</div>
+        </div>
+    </footer>
+</body>
+</html>

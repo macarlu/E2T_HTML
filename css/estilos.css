@@ -1,128 +1,333 @@
-.body{
-  display: flex;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  
- 
+.cabecera {
+    display: flex;
+    background-color: rgb(1,35,80);
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+  }
 
+.nombre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white; 
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align:center;
+    font-size: 28px;
+    }
+
+.logo1{
+
+    object-fit:fill;
+    height: 98%;
+    display: inline-flex;
+    position: relative;
+    top: 1%;
+    width: 100%;
+  }
+
+.logo2{
+    
+      object-fit: cover;
+      height: 100%;
+      display: inline-flex;
+      justify-content: space-around;
+      position: relative;
+    }
+
+.navegador {
+    display: flex;
+    flex-direction: row; /* Distribuye los elementos en fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    background-color: rgb(2, 50, 65); /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
 }
 
-/*Inicio cabecera*/
+.navegador a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1rem; /* Tamaño de fuente */
+    margin: 0 10px; /* Espaciado entre los enlaces */
+    transition: color 0.3s ease; /* Efecto suave al pasar el ratón */
+}
 
-#cabecera{
+/*Efecto hover*/
+.navegador a:hover {
+    color: #e5c9eb; /*Cambia el color al pasar el raton */
+}
 
+.navegador ul {
+    display: flex;
+    list-style: none; /* Elimina los puntos */
+    width: 100%;
+    padding: 0; /* Elimina el espacio de indentación */
+    margin: 0; /* Elimina cualquier margen adicional */
+}
+
+.navegador li {
+    font-size: 1rem;
+    margin: 5px 0; /* Espaciado entre los elementos de la lista */
+}
+
+/* Contenedor principal (mantener igual) */
+.contenedor-columnas {
   display: flex;
   width: 100%;
-  height: 200px;
-  background-color: navy;
-
- 
-  
-.nombre{
- 
-}
-}   
-
-
-/*Inicio barra navegadores*/
-
-.navegadores{
- display: flexbox;
-  
-}
-  /*.button { 
-    display: inline-block;
-    border-style: inset;
-    border-width: 5px;
-    border-radius: 5px;
-    border-color: navy;
-    width: max-content;
-     }*/
-
-
-/*Inicio del body*/
-
-.contenedor{
-
- 
-}
-  
-
-.texto{
- 
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.imagen1{
- 
-}
-
-.imagen img{
- 
-}
-
-.contenedor2{
-
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  max-width: 50%;
+/* Columna de texto (mantener igual) */
+.columna-texto {
+  flex: 1;
   padding: 10px;
 }
-  
-.texto2{
+
+/* Columna de imágenes - MODIFICADO */
+.columna-imagen {
   flex: 1;
-  min-width: 816px;
-  flex-direction: column;
-  align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-}
-.imagen2{
-  flex: 1;
-  max-width: 500px;
-  align-items: center;
+  display: flex;
+  flex-direction: column; /* Apila elementos verticalmente */
+  margin-top: 15px;
+  gap: 15px; /* Espacio entre imágenes */
+  padding-left: 5px; /* Separación del texto */
+  padding-right: 2px;/* Separación del borde */
 }
 
-.imagen img{
+/* Estilos para las imágenes */
+.columna-imagen img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-footer{
-  display: inline-block;
+/* Opcional: controlar altura máxima */
+.imagen-superior {
+  max-height: 60%;
+}
+
+.imagen-inferior {
+  max-height: 60%;
+}
+/* Estilos para la página del menú */
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+}
+
+.menu-section {
+  margin-bottom: 20px;
+}
+
+.menu-section h3 {
+  color: #1a5276;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 4px solid #e74c3c;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.menu-item {
+  background:#e5c9eb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item img {
   width: 100%;
-  height: 80px;
-  border: solid 2px;
-  margin: 5px;
-  padding: 2%;
-  font-display:unset;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-details {
+  padding: 20px;
+}
+
+.item-details h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.item-details p {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+  font-size: 0.90rem;
+}
+
+.price {
+  display: inline-block;
+  background: #5103ab;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Estilos para el formulario de reservas */
+.reservas-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  gap: 40px;
+}
+
+.reservas-form {
+  flex: 2;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(1, 35, 80, 0.1);
+}
+
+.reservas-info {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e1e5ee;
+}
+
+.reservas-form h2 {
+  color: rgb(1, 35, 80);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(1, 35, 80);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #e1e5ee;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgb(1, 35, 80);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(1, 35, 80, 0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.btn-reservar {
+  background: rgb(1, 35, 80);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Estilos para la sección de información */
+.reservas-info h3 {
+  color: rgb(1, 35, 80);
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e1e5ee;
+}
+
+.horario li,
+.politicas li {
+  margin-bottom: 5px;
+  color: #5a5a5a;
+}
+
+.icono {
+  margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reservas-container {
+      flex-direction: column;
+  }
+  
+  .form-row {
+      flex-direction: column;
+      gap: 0;
+  }
+}
+.pie {
+  width: 100%;
+  padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
-  align-items: center;
   background-color: cadetblue;
-
-  h5{
-    text-align: center;
-    text-decoration: wavy;
-    align-content: flex-end;
-  }
-
-  p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: small;
-    text-align: right;
-    text-decoration: solid;
-    
-  }
+  display: flex;
+  justify-content: center; /* Centra el contenido principal */
+  align-items: center; /* Centra verticalmente */
+  position: relative; /* Necesario para posicionar el autor */
+  min-height: 50px; /* Altura mínima */
+  box-sizing: border-box;
 }
 
-table{
+.footer-content {
+  text-align: center; /* Centra el texto dentro */
 
-  width:100%
-
+  width: 100%;
 }
-th, td {
-
-  border: solid 2px 1px 2px 1px #4e2b2b
-}
+.author {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 0.5em;
